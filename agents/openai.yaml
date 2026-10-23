@@ -1,0 +1,4 @@
+interface:
+  display_name: "电影音效设计"
+  short_description: "为影视、短片与广告诊断画面，选择并组织合适的音效与混音方案"
+  default_prompt: "使用 $film-sound-design 为这段画面设计音效层级、切点与混音方案。"

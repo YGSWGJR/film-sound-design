@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local media and scratch files
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.aif
+*.aiff
+*.mp3
+*.flac
+*.m4a
+
+# Temporary output
+*.tmp
+*.log
