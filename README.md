@@ -25,15 +25,15 @@ film-sound-design/
 ├── TECHNICAL.md
 ├── AI_USAGE.md
 └── dist/
-    ├── film-sound-design-v1.0.1.zip
-    └── film-sound-design-v1.0.1.zip.sha256.txt
+    ├── film-sound-design-v1.0.2.zip
+    └── film-sound-design-v1.0.2.zip.sha256.txt
 ```
 
 ## 快速安装
 
 ### Windows
 
-1. 下载并解压 [`dist/film-sound-design-v1.0.1.zip`](dist/film-sound-design-v1.0.1.zip)。
+1. 下载并解压 [`dist/film-sound-design-v1.0.2.zip`](dist/film-sound-design-v1.0.2.zip)。
 2. 将解压后的 `film-sound-design` 文件夹放入：
 
 ```text
@@ -83,20 +83,24 @@ cp -R film-sound-design "${CODEX_HOME:-$HOME/.codex}/skills/"
 
 ## 版本与校验
 
-- 当前版本：`1.0.1`
+- 当前版本：`1.0.2`
 - 发布日期：`2026-10-23`
 - 压缩包 SHA-256：
 
 ```text
-f1bd47aaa0dfb351c99a9b6096d70022b86c5eb341b8381b24d612f3bf42dc15
+d56d6d56022b04455341db09cc767fa967491524bb8f5b584a5c8611a3bfae6e
 ```
 
 Windows 校验：
 
 ```powershell
-Get-FileHash ".\film-sound-design-v1.0.1.zip" -Algorithm SHA256
+Get-FileHash ".\film-sound-design-v1.0.2.zip" -Algorithm SHA256
 ```
 
-## 说明
+## 许可证
 
-技能中的视频学习记录来自用户提供文档中的 Bilibili 参考视频，并核对页面章节、镜头和时间线。项目未附加开源许可证；如需公开分发，请先确认授权范围。
+本项目采用 [MIT License](LICENSE) 开源。允许使用、复制、修改、合并、发布、分发、再许可和销售本项目内容，但须保留版权声明与许可声明。
+
+MIT License 仅适用于本项目原创内容。第三方视频、影片、音频、商标或其他素材仍归各自权利人所有，不在本项目的 MIT 授权范围内。
+
+技能中的视频学习记录来自用户提供文档中的 Bilibili 参考视频，并核对页面章节、镜头和时间线。

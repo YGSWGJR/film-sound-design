@@ -2,7 +2,7 @@
 
 - Skill 名称：`film-sound-design`
 - 显示名称：电影音效设计
-- 包版本：`1.0.1`
+- 包版本：`1.0.2`
 - 文档日期：`2026-10-23`
 - 适用环境：支持 Codex Skills 的 Codex 桌面端、CLI 或 IDE 环境
 - 依赖：无第三方软件、无 MCP 服务、无可执行脚本
@@ -14,7 +14,7 @@
 解压后应看到：
 
 ```text
-电影音效设计Skill-v1.0.1.zip
+电影音效设计Skill-v1.0.2.zip
 └── film-sound-design/
     ├── SKILL.md
     ├── agents/
@@ -71,7 +71,7 @@ $CODEX_HOME/skills
 
 ```text
 skills\film-sound-design\film-sound-design\SKILL.md
-skills\电影音效设计Skill-v1.0.0\film-sound-design\SKILL.md
+skills\电影音效设计Skill-v1.0.2\film-sound-design\SKILL.md
 skills\SKILL.md
 ```
 
@@ -81,7 +81,7 @@ skills\SKILL.md
 
 ### 3.1 解压
 
-1. 将 `电影音效设计Skill-v1.0.1.zip` 解压到一个临时目录。
+1. 将 `电影音效设计Skill-v1.0.2.zip` 解压到一个临时目录。
 2. 确认临时目录中存在 `film-sound-design\SKILL.md`。
 
 ### 3.2 确定 Codex 技能目录
@@ -119,7 +119,7 @@ Copy-Item `
 示例目标：
 
 ```text
-C:\Users\asus\.codex\skills\film-sound-design
+C:\Users\<用户名>\.codex\skills\film-sound-design
 ```
 
 如果该目录已经存在，先退出 Codex，备份旧目录，再整体替换。不要只覆盖部分文件，以免新旧说明和引用文件版本不一致。
@@ -253,7 +253,7 @@ Copy-Item -LiteralPath $old -Destination $backup -Recurse
 如需校验压缩包完整性，可在 Windows PowerShell 中执行：
 
 ```powershell
-Get-FileHash ".\电影音效设计Skill-v1.0.1.zip" -Algorithm SHA256
+Get-FileHash ".\电影音效设计Skill-v1.0.2.zip" -Algorithm SHA256
 ```
 
 核对随包提供的 SHA-256 校验值即可确认传输过程中文件未被修改。
