@@ -2,8 +2,8 @@
 
 - Skill 名称：`film-sound-design`
 - 显示名称：电影音效设计
-- 包版本：`1.0.2`
-- 文档日期：`2026-10-23`
+- 包版本：`1.1.0`
+- 文档日期：`2026-11-18`
 - 适用环境：支持 Codex Skills 的 Codex 桌面端、CLI 或 IDE 环境
 - 依赖：无第三方软件、无 MCP 服务、无可执行脚本
 
@@ -14,7 +14,7 @@
 解压后应看到：
 
 ```text
-电影音效设计Skill-v1.0.2.zip
+film-sound-design-v1.1.0.zip
 └── film-sound-design/
     ├── SKILL.md
     ├── agents/
@@ -34,7 +34,7 @@
 | `film-sound-design/agents/openai.yaml` | 建议保留 | Codex UI 显示名称、简述和默认提示词 |
 | `film-sound-design/references/sound-strategy.md` | 建议保留 | 场景、声音类型和分层配方 |
 | `film-sound-design/references/edit-and-mix.md` | 建议保留 | 入点、转场、混音和 QC 清单 |
-| `film-sound-design/references/video-study-notes.md` | 建议保留 | 视频学习核验记录和来源 |
+| `film-sound-design/references/video-study-notes.md` | 建议保留 | 学习片例清单与出处 |
 | 技术文档 | 可选 | 安装、迁移和维护说明，不参与 Skill 执行 |
 
 不要把整个压缩包直接放进 `skills` 目录，也不要只复制 `SKILL.md`。应解压后复制完整的 `film-sound-design` 文件夹，才能保留所有参考文档和相对链接。
@@ -71,7 +71,7 @@ $CODEX_HOME/skills
 
 ```text
 skills\film-sound-design\film-sound-design\SKILL.md
-skills\电影音效设计Skill-v1.0.2\film-sound-design\SKILL.md
+skills\film-sound-design-v1.1.0\film-sound-design\SKILL.md
 skills\SKILL.md
 ```
 
@@ -81,7 +81,7 @@ skills\SKILL.md
 
 ### 3.1 解压
 
-1. 将 `电影音效设计Skill-v1.0.2.zip` 解压到一个临时目录。
+1. 将 `film-sound-design-v1.1.0.zip` 解压到一个临时目录。
 2. 确认临时目录中存在 `film-sound-design\SKILL.md`。
 
 ### 3.2 确定 Codex 技能目录
@@ -223,7 +223,7 @@ Windows 建议先备份：
 
 ```powershell
 $old = Join-Path $skillsDir "film-sound-design"
-$backup = Join-Path $skillsDir "film-sound-design-backup-2026-10-23"
+$backup = Join-Path $skillsDir "film-sound-design-backup-2026-11-18"
 Copy-Item -LiteralPath $old -Destination $backup -Recurse
 ```
 
@@ -253,7 +253,7 @@ Copy-Item -LiteralPath $old -Destination $backup -Recurse
 如需校验压缩包完整性，可在 Windows PowerShell 中执行：
 
 ```powershell
-Get-FileHash ".\电影音效设计Skill-v1.0.2.zip" -Algorithm SHA256
+Get-FileHash ".\film-sound-design-v1.1.0.zip" -Algorithm SHA256
 ```
 
 核对随包提供的 SHA-256 校验值即可确认传输过程中文件未被修改。
